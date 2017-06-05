@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/mui.css" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />        
+        <link rel="stylesheet" href="css/menu_left.css">
+
+        
+        <title>GABINETE TÉCNICO DE RECONVERSÃO URBANA DO CAZENGA</title>
+    </head>
+    <body>
+   
+    <span onclick="btnLeftOut();" style="display:none;" id="sombra-menu" class="sombra-menu"></span>
+    
+      <div id="ui-menu-left" class="ui-menu-left container-fluit">
+        <div>
+          <span onclick="btnLeftOut();" class="fa fa-chevron-left ui-menu-out"></span>
+          <div class="menu_topo_fundo">
+            <a href="index.html"><img class="menu_img" src="img/logo.png"></a>
+          </div>     
+          <ul class="menu_itens">
+            <li><a href="index.html" style="color:#2E47A5;">Gabinete</a></li>
+            <li><a href="index.html" style="color:#2E47A5;">Contactos</a></li>
+            <li><a href="index.html" style="color:#2E47A5;">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+     
+      <div class="container-fluit appBar_menu">
+        <a onclick="btnLeft();" class="appBar_btn_menu"><i  class="fa fa-bars "></i></a>
+        <a class="titulo-appbar" href="">PROCESSO DE CADASTRAMENTO DA POPULAÇÃO</a>
+        
+        <div class="mui-dropdown icon-esquerdo-appbar">
+          
+          
+        </div>
+
+      </div>
+     
+ <div class="container" id="PagLogin">
+   <br>
+   <form>
+     <legend>Login</legend> 
+     
+     <div class="mui-textfield">
+       <input type="email" id="LoginEmail" class="mui-textfield__input">
+       <label class="mui-textfield__label--floating">E-mail</label>
+     </div> 
+     <div class="mui-textfield">
+       <input type="password" id="LoginSenha" class="mui-textfield__input">
+       <label class="mui-textfield__label--floating">Senha</label>
+     </div>
+     <a onclick="login();" class="mui-btn mui-btn--raised">Entrar</a>
+     <a onclick="exibePagina('PagCadastro');" class="mui-btn mui-btn--raised">Cadastro</a>
+     <span style="margin: 12px;" id="msgLogin" class="msg"></span>
+   </form> 
+ </div> 
+
+    <div  class="container" id="PagCadastro" style="display:none;">
+      <br>
+      <form>
+        <legend>Cadastro de Usuário</legend>
+        
+        <div class="mui-textfield">
+          <input type="text" id="nome" class="mui-textfield__input">
+          <label class="mui-textfield__label--floating">Nome</label>
+        </div>
+        <div class="mui-textfield">
+          <input type="text" id="sobrenome" class="mui-textfield__input">
+          <label class="mui-textfield__label--floating">Sobrenome</label>
+        </div>
+        <div class="mui-textfield">
+          <input type="email" id="email" class="mui-textfield__input">
+          <label class="mui-textfield__label--floating">E-mail</label>
+        </div>        
+        <div class="mui-textfield">
+          <input type="password" id="senha" class="mui-textfield__input">
+          <label class="mui-textfield__label--floating">Senha</label>
+        </div>
+        <a onclick="form();" class="mui-btn mui-btn--raised">Salvar</a>
+        <span style="margin: 12px;" id="msg" class="msg"></span>
+      </form>      
+    </div> 
+    <!-- Pagina Cadastro --> 
+
+        
+        <script type="text/javascript" src="js/mui.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/menuLeft.js"></script>
+        <script src="js/Controller.js"></script>
+        
+        
+    </body>
+</html>
